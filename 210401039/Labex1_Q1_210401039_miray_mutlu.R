@@ -53,3 +53,10 @@ maps$Year <- as.numeric(gsub("AD", "", maps$Year))
 
 # Histogram çizme
 #hist(maps$Year, breaks = 10, main = "Histogram of Years", xlab = "Year", ylab = "Frequency", col = "skyblue", border = "black")
+
+
+
+
+
+# idx değişkeninde adı geçen satırların değerlerini -1 ile çarpma
+maps$Longitude[idx] <- maps$Longitude[idx] * -1
