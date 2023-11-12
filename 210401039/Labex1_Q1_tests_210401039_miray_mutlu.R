@@ -57,3 +57,7 @@ source(relative_path)
   
   
   
+  test_that("Test : Latitude adlı sütun numeric değerlerden oluşmalıdır.", {
+    expect_is(maps$Latitude, "numeric", info = "Latitude sütunu numeric değerlerden oluşmuyor.")
+  })
+  
