@@ -85,3 +85,11 @@ source(relative_path)
     testthat::expect_true(maps$Longitude[3] < 0)
     testthat::expect_true(maps$Longitude[9] < 0)
     testthat::expect_true(maps$Longitude[10] < 0)})
+  
+  
+  test_that("BONUS finalResult adlı değiken vardır, bir data.frame’dir, 3 sütundan oluşmalıdır ve sütun isimleri sırasıyla Longitude, Latitude ve Year olmalıdır", {
+    testthat::expect_true(exists("finalResult", envir = .GlobalEnv))
+    testthat::expect_true(is.data.frame(finalResult))
+    testthat::expect_equal(ncol(finalResult), 3)
+    testthat::expect_equal(colnames(finalResult), c("Longitude", "Latitude","Year"))
+  })
