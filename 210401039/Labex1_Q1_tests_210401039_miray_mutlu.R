@@ -77,3 +77,11 @@ source(relative_path)
   test_that("Test : Year adlı sütun numeric değerlerden oluşmalıdır.", {
     expect_is(maps$Year, "numeric", info = "Year sütunu numeric değerlerden oluşmuyor.")
   })
+  
+  
+  
+  
+  test_that("BONUS Longitude adlı sütunun 3., 9. ve 10. elementleri negatif numeric değerler içermelidir", {
+    testthat::expect_true(maps$Longitude[3] < 0)
+    testthat::expect_true(maps$Longitude[9] < 0)
+    testthat::expect_true(maps$Longitude[10] < 0)})
