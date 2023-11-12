@@ -41,3 +41,15 @@ maps$Year <- gsub("AD","",maps$Year)
 
 maps$Longitude<-as.numeric(maps$Longitude)
 maps$Latitude<-as.numeric(maps$Latitude)
+
+
+
+
+
+
+
+# Year sütununu sayısal tipe çevirme (Eğer daha önce yapılmadıysa)
+maps$Year <- as.numeric(gsub("AD", "", maps$Year))
+
+# Histogram çizme
+#hist(maps$Year, breaks = 10, main = "Histogram of Years", xlab = "Year", ylab = "Frequency", col = "skyblue", border = "black")

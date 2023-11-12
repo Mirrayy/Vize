@@ -62,3 +62,9 @@ source(relative_path)
   })
   
   
+  
+  
+  test_that("Test : idx adlı değişken Global Workspace’de mevcuttur.", {
+    expect_true(exists("idx", envir = .GlobalEnv), info = "idx adlı değişken mevcut değil.")
+  })
+  
