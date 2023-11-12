@@ -39,4 +39,5 @@ maps$Year <- gsub("AD","",maps$Year)
 
 
 
-
+maps$Longitude<-as.numeric(maps$Longitude)
+maps$Latitude<-as.numeric(maps$Latitude)

@@ -61,3 +61,4 @@ source(relative_path)
     expect_is(maps$Latitude, "numeric", info = "Latitude sütunu numeric değerlerden oluşmuyor.")
   })
   
+  
