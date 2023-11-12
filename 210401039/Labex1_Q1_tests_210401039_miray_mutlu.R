@@ -73,3 +73,7 @@ source(relative_path)
     expect_is(idx, "integer", info = "idx nesnesinin tipi integer değil.")
   })
   
+  
+  test_that("Test : Year adlı sütun numeric değerlerden oluşmalıdır.", {
+    expect_is(maps$Year, "numeric", info = "Year sütunu numeric değerlerden oluşmuyor.")
+  })
