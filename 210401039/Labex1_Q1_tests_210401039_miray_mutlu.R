@@ -49,6 +49,10 @@ source(relative_path)
   
   
   
+  test_that("Test : maps adlı data.frame'in 5. sütununun adında 'Title' kelimesi geçmelidir.", {
+    expect_true(grepl("Title", colnames(maps)[5], fixed = TRUE), info = "5. sütunun adında 'Title' kelimesi geçmiyor.")
+  })
+  
   
   
   

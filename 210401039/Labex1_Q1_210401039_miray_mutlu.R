@@ -18,7 +18,6 @@ maps <- data.frame(df)
 
 
 
-
 # Latitude sütunundaki "N" harflerini silme
 maps$Latitude <- gsub("N", "", maps$Latitude)
 
@@ -27,3 +26,9 @@ maps$Latitude <- gsub("N", "", maps$Latitude)
 
 # Longitude sütunundaki "W" harfi içeren satırların indekslerini bulma 1.4
 idx <- grep("W", maps$Longitude)
+
+
+
+# Longitude sütunundaki "E" ve "W" harflerini silme
+maps$Longitude <- gsub("[EW]", "",maps$Longitude)
+
